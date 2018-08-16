@@ -12,13 +12,13 @@
 		39760BEE2125AA14005FE5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39760BED2125AA14005FE5F9 /* Assets.xcassets */; };
 		39760BF12125AA14005FE5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39760BEF2125AA14005FE5F9 /* LaunchScreen.storyboard */; };
 		39E0CF0D2125B458003118A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39E0CF0B2125B458003118A8 /* Info.plist */; };
-		39E0CF112125B69C003118A8 /* KaleidoCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF102125B69C003118A8 /* KaleidoCollectionViewFlowLayout.swift */; };
 		39E0CF132125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */; };
 		39E0CF172125B76C003118A8 /* DogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E0CF142125B76C003118A8 /* DogCollectionViewCell.xib */; };
 		39E0CF182125B76C003118A8 /* DogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF152125B76C003118A8 /* DogCollectionViewCell.swift */; };
 		39E0CF192125B76C003118A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF162125B76C003118A8 /* ViewController.swift */; };
 		39E0CF1C2125B8CF003118A8 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E0CF1B2125B8CF003118A8 /* SDWebImage.framework */; };
 		39E0CF1F2125B98F003118A8 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF1E2125B98F003118A8 /* Dog.swift */; };
+		39E0CF252125CBA9003118A8 /* KaleidoScopeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF242125CBA9003118A8 /* KaleidoScopeCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,15 +28,15 @@
 		39760BED2125AA14005FE5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39760BF02125AA14005FE5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39760BF22125AA14005FE5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39E0CF0A2125B458003118A8 /* KaleidoScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaleidoScope.h; sourceTree = "<group>"; };
-		39E0CF0B2125B458003118A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39E0CF102125B69C003118A8 /* KaleidoCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaleidoCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		39E0CF0A2125B458003118A8 /* KaleidoScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaleidoScope.h; path = Classes/KaleidoScope.h; sourceTree = "<group>"; };
+		39E0CF0B2125B458003118A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Classes/Info.plist; sourceTree = "<group>"; };
+		39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KaleidoScopeCollectionViewFlowLayout.swift; path = Classes/KaleidoScopeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		39E0CF142125B76C003118A8 /* DogCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogCollectionViewCell.xib; sourceTree = "<group>"; };
 		39E0CF152125B76C003118A8 /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
 		39E0CF162125B76C003118A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../KaleidoScopeSample/KaleidoScopeSample/ViewController.swift; sourceTree = "<group>"; };
 		39E0CF1B2125B8CF003118A8 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		39E0CF1E2125B98F003118A8 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		39E0CF242125CBA9003118A8 /* KaleidoScopeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaleidoScopeCollectionView.swift; path = Classes/KaleidoScopeCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 			children = (
 				39E0CF0A2125B458003118A8 /* KaleidoScope.h */,
 				39E0CF0B2125B458003118A8 /* Info.plist */,
-				39E0CF102125B69C003118A8 /* KaleidoCollectionViewFlowLayout.swift */,
 				39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */,
+				39E0CF242125CBA9003118A8 /* KaleidoScopeCollectionView.swift */,
 			);
 			name = KaleidoScope;
 			path = ../KaleidoScope;
@@ -200,8 +200,8 @@
 				39E0CF132125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift in Sources */,
 				39E0CF1F2125B98F003118A8 /* Dog.swift in Sources */,
 				39E0CF182125B76C003118A8 /* DogCollectionViewCell.swift in Sources */,
+				39E0CF252125CBA9003118A8 /* KaleidoScopeCollectionView.swift in Sources */,
 				39760BE72125AA12005FE5F9 /* AppDelegate.swift in Sources */,
-				39E0CF112125B69C003118A8 /* KaleidoCollectionViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

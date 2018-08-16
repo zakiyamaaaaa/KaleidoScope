@@ -1,14 +1,14 @@
 //
-//  KaleidoCollectionViewFlowLayout.swift
-//  Demo
+//  GridCollectionView.swift
+//  KaleidoScopeSample
 //
-//  Created by shoichiyamazaki on 2018/08/16.
+//  Created by shoichiyamazaki on 2018/08/15.
 //  Copyright © 2018年 shoichiyamazaki. All rights reserved.
 //
 
 import UIKit
 
-open class KaleidoCollectionView: UICollectionView {
+open class KaleidoScopeCollectionView: UICollectionView {
     
     private var layout: KaleidoScopeCollectionViewFlowLayout!
     public var isEmphasis: Bool = true {
@@ -17,14 +17,14 @@ open class KaleidoCollectionView: UICollectionView {
         }
     }
     
-    public var intermediateRows = 2 {
+    public var intermediateRows: Int = 2 {
         didSet {
             layout.intermediateRows = intermediateRows
         }
     }
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: .zero, collectionViewLayout: layout)
+        super.init(frame: frame, collectionViewLayout: layout)
         self.layout = KaleidoScopeCollectionViewFlowLayout()
         collectionViewLayout = self.layout
     }
