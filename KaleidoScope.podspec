@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '4.0'
   s.source_files = 'KaleidoScope/Classes/**/*'
 
