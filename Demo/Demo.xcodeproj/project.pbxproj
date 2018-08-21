@@ -33,7 +33,7 @@
 		39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		39E0CF142125B76C003118A8 /* DogCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogCollectionViewCell.xib; sourceTree = "<group>"; };
 		39E0CF152125B76C003118A8 /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
-		39E0CF162125B76C003118A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../KaleidoScopeSample/KaleidoScopeSample/ViewController.swift; sourceTree = "<group>"; };
+		39E0CF162125B76C003118A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39E0CF1B2125B8CF003118A8 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		39E0CF1E2125B98F003118A8 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		39E0CF242125CBA9003118A8 /* KaleidoScopeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionView.swift; sourceTree = "<group>"; };
