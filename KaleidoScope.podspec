@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.0'
-  s.source_files = 'KaleidoScope/Classes/**/*'
+  s.source_files = 'KaleidoScope/**/*'
 
   # s.public_header_files = "Classes/**/*.h"
 
