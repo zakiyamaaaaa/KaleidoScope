@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     private lazy var collectionView: UICollectionView! = {
         let collectionView = KaleidoScopeCollectionView(frame: self.view.bounds)
-        collectionView.register(DogCollectionViewCell.self, forCellWithReuseIdentifier: DogCollectionViewCell.cellIdentifier)
         collectionView.dataSource = self
         collectionView.register(DogCollectionViewCell.nib, forCellWithReuseIdentifier: DogCollectionViewCell.cellIdentifier)
         return collectionView
