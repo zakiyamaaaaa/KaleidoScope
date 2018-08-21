@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct Dog: Decodable {
+struct Dog: Codable {
     let status: String
-    let message: [String]
+    let imageUrl: [String]
+    
+    enum CodingKeys: String, CodingKey {
+        case status
+        case imageUrl = "message"
+    }
 }

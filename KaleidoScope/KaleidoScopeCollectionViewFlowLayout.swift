@@ -13,18 +13,18 @@ class KaleidoScopeCollectionViewFlowLayout: UICollectionViewFlowLayout {
     public var isEmphasis                  = true
     public var cellColumns                 = 3
     public var intermediateRows            = 2
-    private var cellPositionPattern = [(cellSizeScale: CGFloat, column: CGFloat, row: CGFloat)]()
-    private var sectionCells        = [[CGRect]]()
-    private var contentSize         = CGSize.zero
+    private var cellPositionPattern        = [(cellSizeScale: CGFloat, column: CGFloat, row: CGFloat)]()
+    private var sectionCells               = [[CGRect]]()
+    private var contentSize                = CGSize.zero
     
     private func setUpLayout(numberOfCells: Int) {
         
         sectionCells = [[CGRect]]()
         
-        var column: CGFloat = 0
-        var row: CGFloat = 0
-        let numberOfCycle = 2*(cellColumns + intermediateRows*cellColumns)
-        let cellSize: CGFloat = isEmphasis ? 2.0 : 1.0
+        var column: CGFloat     = 0
+        var row: CGFloat        = 0
+        let numberOfCycle       = 2*(cellColumns + intermediateRows*cellColumns)
+        let cellSize: CGFloat   = isEmphasis ? 2.0 : 1.0
         
         for i in 0..<numberOfCells {
             if Int(column) == cellColumns {
@@ -71,7 +71,7 @@ class KaleidoScopeCollectionViewFlowLayout: UICollectionViewFlowLayout {
                 var height = contentSize.height
                 
                 for i in 0..<numberOfCellsInSection {
-                    let position = i  % numberOfCellsInSection
+                    let position = i % numberOfCellsInSection
                     let cellPosition = position % cellPositionPattern.count
                     let cell = cellPositionPattern[cellPosition]
                     let originX = cell.column * (smallCellSideLength + super.minimumInteritemSpacing) + super.sectionInset.left
@@ -96,7 +96,7 @@ class KaleidoScopeCollectionViewFlowLayout: UICollectionViewFlowLayout {
         
         if let collectionView = self.collectionView {
             let numberOfCellsInSection = collectionView.numberOfItems(inSection: 0)
-            self.setUpLayout(numberOfCells: numberOfCellsInSection)
+            setUpLayout(numberOfCells: numberOfCellsInSection)
             for j in 0..<numberOfCellsInSection {
                 let indexPath = IndexPath(row: j, section: 0)
                 if let attributes = layoutAttributesForItem(at: indexPath), rect.intersects(attributes.frame) {

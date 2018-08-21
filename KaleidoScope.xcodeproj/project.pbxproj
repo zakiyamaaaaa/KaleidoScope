@@ -14,10 +14,10 @@
 
 /* Begin PBXFileReference section */
 		39E0CEF72125B2AF003118A8 /* KaleidoScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaleidoScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39E0CEFA2125B2AF003118A8 /* KaleidoScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KaleidoScope.h; path = Classes/KaleidoScope.h; sourceTree = "<group>"; };
-		39E0CEFB2125B2AF003118A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Classes/Info.plist; sourceTree = "<group>"; };
-		39E0CF212125C1D6003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaleidoScopeCollectionViewFlowLayout.swift; path = Classes/KaleidoScopeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		39E0CF262125CF8A003118A8 /* KaleidoScopeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KaleidoScopeCollectionView.swift; path = Classes/KaleidoScopeCollectionView.swift; sourceTree = "<group>"; };
+		39E0CEFA2125B2AF003118A8 /* KaleidoScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaleidoScope.h; sourceTree = "<group>"; };
+		39E0CEFB2125B2AF003118A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E0CF212125C1D6003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		39E0CF262125CF8A003118A8 /* KaleidoScopeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,7 +276,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/KaleidoScope/Classes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/KaleidoScope/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +304,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/KaleidoScope/Classes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/KaleidoScope/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
