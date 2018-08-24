@@ -19,19 +19,64 @@
 </div>
 
 ### Rows:1
-<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.05.34.png?raw=true" width="200px">
+
+```
+collectionView.intermediateRows = 1
+```
+
+
+<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.05.34.png?raw=true" width="200px"><img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-23%20at%2023.17.41.png" width="200px">
 
 ### Rows:2
-<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.02.47.png?raw=true" width="200px">
 
-### Rows:2
-<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.05.50.png?raw=true" width="200px">
+```
+collectionView.intermediateRows = 2
+```
+
+<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.02.47.png?raw=true" width="200px"><img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-23%20at%2023.17.20.png" width="200px">
+
+
+### Rows:3
+
+```
+collectionView.intermediateRows = 3
+```
+
+<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.05.50.png?raw=true" width="200px"><img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-23%20at%2023.18.01.png" width="200px">
 
 ### isEmphasis = false
-<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.06.14.png?raw=true" width="200px">
+```
+collectionView.isEmphasis = false
+```
 
-## Usage
+<img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.06.14.png?raw=true" width="200px"><img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-23%20at%2023.18.22.png" width="200px">
+
+# Installation
+
+## Carthage
+
+```ruby
+github "zakiyamaaaaa/KaleidoScope"
+```
+https://www.raywenderlich.com/416-carthage-tutorial-getting-started
+
+## CocoaPods
+
+```ruby
+pod 'KaleidoScope'
+```
+
+https://www.raywenderlich.com/626-cocoapods-tutorial-for-swift-getting-started
+
+
+# Usage
 
 ```
 let collectionView = KaleidoCollectionView(frame: self.view.bounds)
 ```
+
+or You can use this on Storyboard
+
+# License
+
+KaleidoScope is released under the MIT license. See LICENSE for details.
