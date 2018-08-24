@@ -68,6 +68,10 @@ pod 'KaleidoScope'
 
 https://www.raywenderlich.com/626-cocoapods-tutorial-for-swift-getting-started
 
+# Requirements
+- iOS10.0+
+- Swift4.0+
+
 
 # Usage
 
