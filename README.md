@@ -1,5 +1,23 @@
 # KaleidoScope
 
+<div align="left">
+  <a href="https://github.com/Carthage/Carthage">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" />
+  </a>
+  <a href="http://cocoapods.org/pods/MoreCodable">
+    <img src="https://img.shields.io/cocoapods/v/KaleidoScope.svg" alt="CocoaPods" />
+  </a>
+  <a href="http://cocoapods.org/pods/MoreCodable">
+    <img src="https://img.shields.io/cocoapods/p/KaleidoScope.svg" alt="Platform" />
+  </a>
+  <a href="https://developer.apple.com/swift">
+    <img src="https://img.shields.io/badge/Swift-4-F16D39.svg" alt="Swift Version" />
+  </a>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="license:MIT" />
+  </a>
+</div>
+
 ### Rows:1
 <img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.05.34.png?raw=true" width="200px">
 
