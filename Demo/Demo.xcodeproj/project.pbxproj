@@ -14,11 +14,9 @@
 		39E0CF0D2125B458003118A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39E0CF0B2125B458003118A8 /* Info.plist */; };
 		39E0CF132125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */; };
 		39E0CF172125B76C003118A8 /* DogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E0CF142125B76C003118A8 /* DogCollectionViewCell.xib */; };
-		39E0CF182125B76C003118A8 /* DogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF152125B76C003118A8 /* DogCollectionViewCell.swift */; };
 		39E0CF192125B76C003118A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF162125B76C003118A8 /* ViewController.swift */; };
-		39E0CF1C2125B8CF003118A8 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E0CF1B2125B8CF003118A8 /* SDWebImage.framework */; };
-		39E0CF1F2125B98F003118A8 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF1E2125B98F003118A8 /* Dog.swift */; };
 		39E0CF252125CBA9003118A8 /* KaleidoScopeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF242125CBA9003118A8 /* KaleidoScopeCollectionView.swift */; };
+		39E0CF2F212D809C003118A8 /* SimpleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0CF2E212D809C003118A8 /* SimpleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +30,10 @@
 		39E0CF0B2125B458003118A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39E0CF122125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		39E0CF142125B76C003118A8 /* DogCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogCollectionViewCell.xib; sourceTree = "<group>"; };
-		39E0CF152125B76C003118A8 /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
 		39E0CF162125B76C003118A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39E0CF1B2125B8CF003118A8 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
-		39E0CF1E2125B98F003118A8 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		39E0CF242125CBA9003118A8 /* KaleidoScopeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaleidoScopeCollectionView.swift; sourceTree = "<group>"; };
+		39E0CF2E212D809C003118A8 /* SimpleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39E0CF1C2125B8CF003118A8 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,14 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				39760BE62125AA12005FE5F9 /* AppDelegate.swift */,
-				39E0CF152125B76C003118A8 /* DogCollectionViewCell.swift */,
 				39E0CF142125B76C003118A8 /* DogCollectionViewCell.xib */,
-				39E0CF1E2125B98F003118A8 /* Dog.swift */,
 				39E0CF162125B76C003118A8 /* ViewController.swift */,
 				39760BEA2125AA12005FE5F9 /* Main.storyboard */,
 				39760BED2125AA14005FE5F9 /* Assets.xcassets */,
 				39760BEF2125AA14005FE5F9 /* LaunchScreen.storyboard */,
 				39760BF22125AA14005FE5F9 /* Info.plist */,
+				39E0CF2E212D809C003118A8 /* SimpleCollectionViewCell.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -115,7 +110,6 @@
 				39760BDF2125AA12005FE5F9 /* Sources */,
 				39760BE02125AA12005FE5F9 /* Frameworks */,
 				39760BE12125AA12005FE5F9 /* Resources */,
-				39E0CF1D2125B8D9003118A8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -174,23 +168,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		39E0CF1D2125B8D9003118A8 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		39760BDF2125AA12005FE5F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,10 +175,9 @@
 			files = (
 				39E0CF192125B76C003118A8 /* ViewController.swift in Sources */,
 				39E0CF132125B6D7003118A8 /* KaleidoScopeCollectionViewFlowLayout.swift in Sources */,
-				39E0CF1F2125B98F003118A8 /* Dog.swift in Sources */,
-				39E0CF182125B76C003118A8 /* DogCollectionViewCell.swift in Sources */,
 				39E0CF252125CBA9003118A8 /* KaleidoScopeCollectionView.swift in Sources */,
 				39760BE72125AA12005FE5F9 /* AppDelegate.swift in Sources */,
+				39E0CF2F212D809C003118A8 /* SimpleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

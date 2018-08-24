@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private lazy var collectionView: UICollectionView! = {
-        let collectionView = KaleidoScopeCollectionView(frame: self.view.bounds)
+    private lazy var collectionView: UICollectionView = {
+        let collectionView = KaleidoScopeCollectionView(frame: view.bounds)
         collectionView.dataSource = self
-        collectionView.register(DogCollectionViewCell.nib, forCellWithReuseIdentifier: DogCollectionViewCell.cellIdentifier)
+        collectionView.register(SimpleCollectionViewCell.self, forCellWithReuseIdentifier: SimpleCollectionViewCell.cellIdentifier)
+        collectionView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         return collectionView
     }()
-    
+    let numberofCells = 30
     fileprivate var dogImageUrlList = [String]()
     
     override func viewDidLoad() {
@@ -24,46 +25,20 @@ class ViewController: UIViewController {
         
         self.view.addSubview(collectionView)
         
-        fetchData { (dogs) in
-            guard let dogs = dogs else { return }
-            self.dogImageUrlList = dogs.imageUrl
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-            }
-        }
     }
 
-}
-
-extension ViewController {
-    
-    fileprivate func fetchData(completion: @escaping((Dog?) -> Void)) {
-        guard let url = URL(string: "https://dog.ceo/api/breeds/image/random/50") else {
-            completion(nil)
-            return
-        }
-        
-        let session = URLSession(configuration: .default)
-        session.dataTask(with: url) { (data, _, _) in
-            guard let data = data, let dogs = try? JSONDecoder().decode(Dog.self, from: data) else { return }
-            
-            print(dogs)
-            completion(dogs)
-        }.resume()
-    }
-    
 }
 
 // MARK: - UICollectionDataSource
 extension ViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dogImageUrlList.count
+        return numberofCells
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DogCollectionViewCell.cellIdentifier, for: indexPath) as? DogCollectionViewCell else { return UICollectionViewCell() }
-        cell.imgUrl = dogImageUrlList[indexPath.row]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SimpleCollectionViewCell.cellIdentifier, for: indexPath) as? SimpleCollectionViewCell else { return UICollectionViewCell() }
+        cell.label.text = indexPath.row.description
         return cell
     }
 
