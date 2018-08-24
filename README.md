@@ -18,7 +18,7 @@
   </a>
 </div>
 
-### Rows:1
+### Intermediate Rows: 1
 
 ```
 collectionView.intermediateRows = 1
@@ -27,7 +27,7 @@ collectionView.intermediateRows = 1
 
 <img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.05.34.png?raw=true" width="200px"><img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-23%20at%2023.17.41.png" width="200px">
 
-### Rows:2
+### Intermediate Rows: 2
 
 ```
 collectionView.intermediateRows = 2
@@ -36,7 +36,7 @@ collectionView.intermediateRows = 2
 <img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-16%20at%2023.02.47.png?raw=true" width="200px"><img src="https://github.com/zakiyamaaaaa/KaleidoScope/blob/master/ScreenShots/Images/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-08-23%20at%2023.17.20.png" width="200px">
 
 
-### Rows:3
+### Intermediate Rows: 3
 
 ```
 collectionView.intermediateRows = 3
