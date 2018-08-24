@@ -27,17 +27,20 @@ open class KaleidoScopeCollectionView: UICollectionView {
         super.init(frame: frame, collectionViewLayout: layout)
         self.layout = KaleidoScopeCollectionViewFlowLayout()
         collectionViewLayout = self.layout
+        backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
     init(frame: CGRect) {
         layout = KaleidoScopeCollectionViewFlowLayout()
         super.init(frame: frame, collectionViewLayout: layout)
+        backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         layout = KaleidoScopeCollectionViewFlowLayout()
         collectionViewLayout = layout
+        backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
 
 }
