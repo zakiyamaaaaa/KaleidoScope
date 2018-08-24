@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         let collectionView = KaleidoScopeCollectionView(frame: view.bounds)
         collectionView.dataSource = self
         collectionView.register(SimpleCollectionViewCell.self, forCellWithReuseIdentifier: SimpleCollectionViewCell.cellIdentifier)
-        collectionView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         return collectionView
     }()
     let numberofCells = 30

@@ -25,12 +25,12 @@ class SimpleCollectionViewCell: UICollectionViewCell {
     
     private func setupUI() {
         
-        self.addSubview(label)
+        addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
-        self.centerXAnchor.constraint(equalTo: label.centerXAnchor).isActive = true
-        self.centerYAnchor.constraint(equalTo: label.centerYAnchor).isActive = true
-        self.layer.borderWidth = 1
-        self.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        centerXAnchor.constraint(equalTo: label.centerXAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: label.centerYAnchor).isActive = true
+        layer.borderWidth = 1
+        layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
     }
     
 }
